@@ -1,0 +1,63 @@
+.services {
+    padding-top: 40px;
+    &__catalog {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 20px;
+    }
+    &-item {
+        max-width: 100%;
+        min-height: 600px;
+        border: 1px solid #000;
+        margin-right: 20px;     
+        &__img {
+           cursor: pointer;          
+           img {
+            object-fit: cover;
+            max-width: 100%;            
+           }                   
+        }
+        &__img img:hover {                
+            opacity: 0.8;   
+        }  
+        &__wrapper {
+           padding: 20px;
+                      
+        }
+        &__descr {
+            font-size: 28px;          
+            font-weight: 400;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px 0 10px 0;
+        }
+        &__descr:hover {
+            display: block;           
+            margin: 0;
+            transition: all .5s ;
+            opacity: 0.8;
+        }  
+        &__time {
+            padding: 20px 0 10px 0;
+        }  
+        &__prices {
+            display: flex;
+            flex-direction: column;  
+        }
+        &__old-price {
+            font-family: 'Montserrat', sans-serif;
+            color: #646464da;
+            text-decoration: line-through;            
+        }  
+        &__price {
+            font-family: 'Montserrat', sans-serif;
+            padding-bottom: 40px;
+            font-weight: 400;
+        }    
+       
+    }
+    &-item:last-child {
+        margin: 0;
+    }
+}

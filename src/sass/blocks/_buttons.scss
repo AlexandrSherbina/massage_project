@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-width: 0;    
+    background-color: rgb(227, 208, 168);
+    color: #fff;
+    font-size: 18px;
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.2s;
+    }
+    &-form {
+        background-color: #000;
+        color: #fff;
+    }
+}
