@@ -1,0 +1,22 @@
+.back {
+    a {
+        text-decoration: none;
+        color: olive;
+        font-size: 18px;
+        margin-left: 46px;
+        text-shadow: 3px 3px 3px rgb(128, 128, 0);
+    }
+    & a::before {
+        content: '<';
+        display: inline-block;
+        padding-right: 2px; 
+        font-size: 34px;
+        font-weight: 100;
+        transform: translateY(4px);
+        color: olive;
+        cursor: pointer;    
+    }   
+    &:hover {
+        opacity: 0.8;
+    }
+}

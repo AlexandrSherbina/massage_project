@@ -43,5 +43,10 @@
     }
     &__text {
         padding: 50px 0 100px 0;
+        &-list {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            padding-bottom: 32px;
+        }
     }
 }

@@ -1,0 +1,16 @@
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33.4px;
+    text-align: center;
+    &__quote {
+        color: #000;
+        font-weight: 500;
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    &__fs {
+        font-size: 25px;
+    }
+}
