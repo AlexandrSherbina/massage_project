@@ -1,0 +1,27 @@
+.articles {
+    padding-top: 123px;   
+    &__item {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    &-time {
+        margin: 20px 0 20px 20px;
+        color: rgba($color: #1b1717, $alpha: 1.0);
+        font-size: 12px;
+    }
+    &__title {
+        text-transform: none;
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;  
+        margin: 44px 0; 
+    }
+    &__items {
+        margin-bottom: 70px;
+        &-list {
+            text-align: left;
+            line-height: 30px;
+        }
+    }  
+
+}
