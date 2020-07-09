@@ -1,8 +1,14 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/tiny-slider';
+// @import 'libs/slick';
+
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 .container {   
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -21,8 +27,10 @@ iframe {
 @import 'blocks/descr';
 @import 'blocks/back';
 @import 'blocks/slogan';
+@import 'blocks/carousel';
 @import 'blocks/signup';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 @import 'blocks/media';
 

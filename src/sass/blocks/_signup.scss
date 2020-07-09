@@ -5,22 +5,31 @@
         justify-content: center;
         align-content: center;
         max-width: 100%;
-        width: 500px;
+        max-width: 500px;
         margin: 0 auto;
-        padding-bottom: 80px;
-    }
-    input, textarea {
-        border: 0 ;
-        border-bottom: 1px solid #000;
-        padding: 12px; 
-        margin: 5px;  
-        &:hover  {
-            border: 1px solid;
-        }    
+        padding: 0 10px 80px 10px;
+        .error {
+            border: 2px solid rgb(238, 81, 81);
+        }
+        label.error {
+            border: none;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
     }    
-    textarea {
-        resize: none;
-        height: 100px;
-        margin-bottom: 30px;             
-    }     
 }
+input, textarea {
+    border: 0 ;
+    border-bottom: 1px solid #000;
+    padding: 12px; 
+    margin: 5px;  
+    &:hover  {
+        border: 1px solid;
+    }    
+}    
+textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 30px;             
+}     
