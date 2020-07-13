@@ -82,6 +82,7 @@ $('form').submit(function(e) {
   });
   return false;
 });
+
 // scroll page up
 $(window).scroll(function() {
   if ($(this).scrollTop() > 1000 ) {
@@ -96,27 +97,6 @@ $("a[href^='#']").click(function(){
   $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
   return false;
 });
-// slick slider
-// $(document).ready(function () {
-//   $('.carousel__inner').slick({
-//     infinite: true,
-//     speed: 900, 
-//     slidesToShow: 1,
-//     adaptiveHeight: true,
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//     prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/left.svg"></button>',
-//     nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/right.svg"></button>',
-//     responsive: [
-//       {
-//         breakpoint: 992,
-//         settings: {          
-//         arrows: false
-//         }
-//       }
-//     ]     
-//   });
-// });
 
 // tiny slider 
 const slider = tns({
@@ -155,5 +135,55 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
   slider.goTo('next');
 });
+
+// Comments
+// let comments =[];
+// loadComments();
+
+// document.getElementById('comment-add').onclick = function() {
+//   event.preventDefault();
+//   let commentName = document.getElementById('comment-name');
+//   let commentBody = document.getElementById('comment-body');
+
+//   let comment = {
+//     name : commentName.value,
+//     body : commentBody.value,
+//     time : Math.floor(Date.now()/1000)
+//   }
+//   commentName = '';
+//   commentBody = '';
+//   comments.push(comment);
+//   saveComments();
+//   showComments();
+// }
+// function saveComments() {
+//   localStorage.setItem('comments', JSON.stringify(comments));
+// }
+// function loadComments() {
+//   if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+//   showComments();
+// }
+// function showComments() {
+//   let commentField = document.getElementById('comment-field');
+//   let out = '';
+//   comments.forEach(function(item) {
+//     out += `<p class="text-right small"><em>${timeConverter(item.time)}</em></p>`;
+//     out += `<p class="alert alert-primary">${item.name}</p>`;
+//     out += `<p class="alert alert-success">${item.body}</p>`;
+//   });
+//   commentField.innerHTML = out;
+// }
+// function timeConverter(UNIX_timestamp) {
+//   let a = new Date(UNIX_timestamp * 1000);
+//   let months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
+//   let year = a.getFullYear();
+//   let month = months[a.getMonth()];
+//   let date = a.getDate();
+//   let hour = a.getHours();
+//   let min = a.getMinutes();
+//   let sec = a.getSeconds();
+//   let time = `${date} ${month} ${year}г.${hour}:${min}:${sec}`;
+//   return time;
+// }
 
 });

@@ -57,10 +57,14 @@
         transition: 0.2s ease-in-out;
     }   
     &__background {     
-        margin-top: 136px; 
+        margin-top: 136px;
         height: 650px;
         background: url(../image/head_bg.jpg) center center/cover no-repeat;
         background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
     }
     &__text {
         padding: 50px 0 100px 0;

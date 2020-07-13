@@ -17,6 +17,29 @@ iframe {
     height: 630px;
     border: 0; 
 }
+.admin-panel {
+    display: block;
+    width: 139px;
+    text-align: center;
+    transform: translateY(40px);
+    border-radius: 13%;
+    border: 1px solid;
+    background-color: rgba(255,255,255,.4);
+    padding: 10px;
+    margin-right: 20px;
+    color: #bfaa90;
+    transition: all .8s;
+}
+.admin-panel:hover {
+    background-color: rgba($color: #fff, $alpha: .5);
+    border-radius: 10%;
+    border-color: #000;
+    text-decoration: none;
+    color: #806d5a; 
+    border: 1px solid bisque;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
 
 @import 'blocks/nav';
 @import 'blocks/header';
@@ -29,6 +52,7 @@ iframe {
 @import 'blocks/slogan';
 @import 'blocks/carousel';
 @import 'blocks/signup';
+@import 'blocks/comments';
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
